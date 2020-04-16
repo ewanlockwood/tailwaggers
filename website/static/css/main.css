@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+
+.homepage-container {
+    background: url("../images/background.JPG") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    padding: 0;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+
+#nav-bar {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  width: 100vw;
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+}
+
+.nav-link {
+  color: black;
+}
+
+#nav-collapse {
+  color: black;
+}
+
 @media screen and (min-width: 479px) {
 /* start of medium tablet styles */
 h1 {
