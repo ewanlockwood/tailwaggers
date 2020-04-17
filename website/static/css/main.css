@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
 
+html,
+body {
+  margin: 0;
+  paddding: 0;
+}
 
 .homepage-container {
     background: url("../images/background.JPG") no-repeat center center fixed;
@@ -9,32 +14,42 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
     padding: 0;
+    margin: 0;
 }
-h1 {
-  color: black;
+
+.blur {
+  background: rgba(138, 138, 138, 0.3);
+  backdrop-filter: blur(4px);
+  height: 100vh;
+  width: 100%;
+}
+
+.side-bar {
+  height: 100vh;
+  width: 25%;
+  background: rgba(250, 250, 250, 1);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+
+#logo-home-div {
+  width: 100%;
   text-align: center;
+  padding: 25px 0;
 }
 
-#nav-bar {
-  background-color: rgba(255, 255, 255, 0.6);
-  position: fixed;
-  width: 100vw;
-  font-family: 'Roboto Slab', serif;
-}
-
-.navbar-brand img {
+#logo-link-img {
   max-width: 150px;
 }
 
-.nav-link {
-  color: black;
-}
 
-#nav-collapse {
-  color: black;
-}
+
+
+
+/* Medie Queries */
 
 @media screen and (min-width: 479px) {
 /* start of medium tablet styles */
