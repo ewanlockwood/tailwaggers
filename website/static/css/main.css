@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 
 html,
 body {
@@ -24,7 +26,6 @@ body {
   height: 100vh;
   width: 100%;
 }
-
 .side-bar {
   height: 100vh;
   width: 25%;
@@ -34,40 +35,51 @@ body {
   position: absolute;
   top: 0;
 }
-
 #logo-home-div {
   width: 100%;
   text-align: center;
   padding: 25px 0;
 }
-
 #logo-link-img {
-  max-width: 150px;
+  width: 100px;
+}
+.nav {
+  margin-top: 150px;
+  width: 100%
+
 }
 
+.nav-link {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
 
-
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
 
 
 /* Medie Queries */
 
 @media screen and (min-width: 479px) {
 /* start of medium tablet styles */
-h1 {
-  color: blue;
+#logo-link-img {
+  width: 100px;
 }
+
 }
 
 @media screen and (min-width: 767px) {
 /* start of large tablet styles */
-h1{
-  color: red;
-}
+
 }
 
 @media screen and (min-width: 991px) {
 /* start of desktop styles */
-h1 {
-  color: green;
+#logo-link-img {
+  width: 200px;
 }
 }
