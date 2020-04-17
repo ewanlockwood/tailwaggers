@@ -7,6 +7,9 @@
 
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/fb813dfcdd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,13 +18,19 @@
   <!-- Navigation End -->
 
   <div class="homepage-container">
+    <!-- Blur Effect -->
     <div class="blur"> </div>
+
+    <!-- Side Bar Start -->
       <div class="side-bar">
+        <!-- Logo -->
         <div id="logo-home-div">
           <a id='logo-home-a' href="#">
             <img id='logo-link-img' src="{% static 'images/Logo.png' %}" alt="">
           </a>
         </div>
+
+        <!-- Navigation -->
         <div class="nav">
           <div class="nav-link">
             <a href="#"> ABOUT </a>
@@ -30,9 +39,23 @@
             <a href="#"> TEETH CLEANING </a>
           </div>
         </div>
+
+        <!-- Footer -->
+        <div class="footer">
+          <div class="footer-item">
+            <a href="#"> <i class="fas fa-mobile-alt"></i> </a>
+          </div>
+          <div class="footer-item">
+            <a href="#"> <i class="fas fa-envelope"></i> </a>
+          </div>
+        </div>
       </div>
 
+
+    <!-- Side Bar End -->
   </div>
+
+
 </body>
 
 </html>
