@@ -20,5 +20,7 @@ from website import views as wv
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', wv.index),
+    path('', wv.index, name='index'),
+    path('about', wv.about, name='about' ),
+    path('teeth-cleaning', wv.teethClean, name='tc'),
 ]

@@ -81,7 +81,7 @@ body {
   font-size: 18px;
   text-align: center;
   margin: 0 20px;
-  color: #f7c27c;
+  color: #000;
 }
 
 .footer {
@@ -103,9 +103,17 @@ body {
   font-size: 15px;
 }
 
+.main-content {
+  height: 100vh;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
 
 /* Medie Queries */
-
 @media screen and (min-width: 479px) {
 /* start of medium tablet styles */
 #logo-link-img {

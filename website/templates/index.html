@@ -13,20 +13,16 @@
 </head>
 
 <body>
-  <!-- Navigation Start -->
-
-  <!-- Navigation End -->
-
   <div class="homepage-container">
     <!-- Blur Effect -->
     <div class="blur"> </div>
 
     <!-- Side Bar Start -->
-      <div class="side-bar">
+    <div class="side-bar">
 
         <!-- Logo -->
         <div id="logo-home-div">
-          <a id='logo-home-a' href="#">
+          <a id='logo-home-a' href="{% url 'index' %}">
             <img id='logo-link-img' src="{% static 'images/Logo.png' %}" alt="">
           </a>
         </div>
@@ -34,10 +30,10 @@
         <!-- Navigation -->
         <div class="nav">
           <div class="nav-link">
-            <a href="#"> ABOUT </a>
+            <a href="{% url 'about' %}"> ABOUT </a>
           </div>
           <div class="nav-link">
-            <a href="#"> TEETH CLEANING </a>
+            <a href="{% url 'tc' %}"> TEETH CLEANING </a>
           </div>
         </div>
 
@@ -68,11 +64,13 @@
           </div>
         </div>
       </div>
-
     <!-- Side Bar End -->
+
+    <!-- -->
+    <div class="main-content">
+      {% block content %} {% endblock %}
+    </div>
+    <!-- -->
   </div>
-
-
 </body>
-
 </html>
